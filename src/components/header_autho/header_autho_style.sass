@@ -1,0 +1,61 @@
+.container
+  width: 1160px
+  margin: auto
+.header
+  display: flex
+  height: 70px
+  align-items: center
+  justify-content: space-between
+  .header__autentification
+    width: 121px
+  .logo
+    display: flex
+    align-items: center
+  .header__menu
+    width: 442.67px
+    margin-left: 446px
+  .autentification
+    text-align: right
+    .autentification__user-name
+      position: relative
+      color: rgba(31, 32, 65, 0.5)
+    .autentification__user-name::before
+      position: absolute
+      content: ''
+      border-left: 1px solid rgba(31, 32, 65, 0.1)
+      height: 30px
+      left: 0
+      top: -8px
+
+
+  .menu__list
+    display: flex
+    justify-content: space-between
+    .menu__chevron-down::before
+      content: ""
+      border-style: solid
+      border-width: 2px 2px 0 0
+      display: inline-block
+      width: 9px
+      height: 9px
+      top: 1px
+      margin-left: 14px
+      margin-bottom: 2.7px
+      position: relative
+      right: 5.8px
+      transform: rotate(135deg)
+      font-family: 'Montserrat-bold', sans-serif
+      font-weight: bold
+
+    .menu__link
+      color: rgba(31, 32, 65, 0.5)
+    .menu__link_state_active
+      color: rgba(31, 32, 65, 0.75)
+      font-family: 'Montserrat-bold', sans-serif
+      font-weight: bold
+
+
+
+
+
+

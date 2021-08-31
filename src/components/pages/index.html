@@ -2,23 +2,184 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <style>
+      @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Regular.eot');
+    src: local('☺'), url('../assets/fonts/Montserrat-Regular.woff') format('woff'), url('../assets/fonts/Montserrat-Regular.ttf') format('truetype'), url('../assets/fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../assets/fonts/ofont.ru_Montserrat.eot');
+    src: local('☺'), url('../assets/fonts/ofont.ru_Montserrat.woff') format('woff'), url('../assets/fonts/ofont.ru_Montserrat.ttf') format('truetype'), url('../assets/fonts/ofont.ru_Montserrat.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+a{
+    color: black;
+}
+
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}.container {
+  width: 1160px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__autentification {
+  width: 121px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .header__menu {
+  width: 442.67px;
+  margin-left: 446px;
+}
+.header .autentification {
+  text-align: right;
+}
+.header .autentification .autentification__user-name {
+  position: relative;
+  color: rgba(31, 32, 65, 0.5);
+}
+.header .autentification .autentification__user-name::before {
+  position: absolute;
+  content: "";
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+  height: 30px;
+  left: 0;
+  top: -8px;
+}
+.header .menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu__list .menu__chevron-down::before {
+  content: "";
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  top: 1px;
+  margin-left: 14px;
+  margin-bottom: 2.7px;
+  position: relative;
+  right: 5.8px;
+  transform: rotate(135deg);
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+}
+.header .menu__list .menu__link {
+  color: rgba(31, 32, 65, 0.5);
+}
+.header .menu__list .menu__link_state_active {
+  color: rgba(31, 32, 65, 0.75);
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header_autho_style.css.map */
+
+    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="logo"><img src="img/logo.svg"><span>Toxin</span></div>
-        <div class="header__menu">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item menu__item_state_active"><a class="menu__link" href="1">О нас</a></li>
-              <li class="menu__item"><a class="menu__link" href="2">Услуги</a></li>
-              <li class="menu__item"><a class="menu__link" href="3">Вакансии</a></li>
-              <li class="menu__item"><a class="menu__link" href="4">Новости</a></li>
-              <li class="menu__item"><a class="menu__link" href="5">Соглашения</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
-  </body>
+  <body><div class="container"><header class="header"><div class="logo"><img src="../header/img/logo.svg"/></div><div class="header__menu"><nav class="menu"><ul class="menu__list"><li class="menu__item"><a class="menu__link menu__link_state_active" href="1">О нас</a></li><li class="menu__item"><a class="menu__link" href="2">Услуги<i class="menu__chevron-down"></i></a></li><li class="menu__item"><a class="menu__link" href="3">Вакансии</a></li><li class="menu__item"><a class="menu__link" href="4">Новости</a></li><li class="menu__item"><a class="menu__link" href="5">Соглашения<i class="menu__chevron-down"></i></a></li></ul></nav></div><div class="header__autentification"><div class="autentification"><p class="autentification__user-name">Юлий Цезарь</p></div></div></header></div></body>
 </html>
