@@ -116,12 +116,12 @@ h6 {
   margin: auto;
 }
 .container .footer {
-  height: 372px;
+  height: 373px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px;
 }
 .container .footer h3 {
   font-family: "Montserrat-bold", sans-serif;
@@ -129,22 +129,96 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
 }
-.container .footer .info {
-  width: 260px;
-}
 .container .footer nav ul li a {
   color: rgba(31, 32, 65, 0.5);
 }
 .container footer {
   height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.container footer .footer-bottom__copyright {
+.container footer .footer-bottom__copyright__text {
   color: rgba(31, 32, 65, 0.5);
+}
+
+.info {
+  width: 300px;
+  margin-bottom: 90px;
+}
+.info .info__company-info {
+  line-height: 24px;
+  margin-top: 17px;
+  width: 255px;
+}
+
+.footer__item {
+  width: 200px;
+  margin-top: 6px;
+}
+
+.content {
+  margin-top: 24px;
+}
+
+.footer-ul {
+  display: flex;
+  height: 128px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.support__footer {
+  height: 90px;
+}
+
+.subscription__content {
+  line-height: 25px;
+}
+
+.subscription__item {
+  height: 115px;
+  margin-top: 19px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.subscription__input {
+  height: 44px;
+  text-indent: 16px;
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.subscription {
+  width: 260px;
+}
+
+.links {
+  width: 112px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+}
+
+.subscription__form {
+  position: relative;
+}
+
+.subscription__arrow {
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }
 
 /*# sourceMappingURL=footer.css.map */
 
     </style>
   </head>
-  <body><div class="container"><div class="footer"><div class="info footer__item"><div class="info__logo"><img src="../assets/img/logo/logo.svg"/></div><div class="info__company-info"><span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды».</span></div></div><div class="navigation footer__item"><h3>Навигация</h3><div class="navigation__content"><nav class="navigation__nav"><ul class="navigation__footer"><li class="navigation__item"><a class="navigation__link" href="1">О нас</a></li><li class="navigation__item"><a class="navigation__link" href="2">Новости</a></li><li class="navigation__item"><a class="navigation__link" href="3">Служба поддержки</a></li><li class="navigation__item"><a class="navigation__link" href="4">Услуги</a></li></ul></nav></div></div><div class="about footer__item"><h3>О нас</h3><div class="about__content"><nav class="about__nav"><ul class="about__footer"><li class="about__item"><a class="about__link" href="1">О сервисе</a></li><li class="about__item"><a class="about__link" href="2">Наша команда</a></li><li class="about__item"><a class="about__link" href="3">Вакансии</a></li><li class="about__item"><a class="about__link" href="4">Инвесторы</a></li></ul></nav></div></div><div class="support footer__item"><h3>Служба поддержки</h3><div class="support__content"><nav class="support__nav"><ul class="support__footer"><li class="support__item"><a class="support__link" href="1">О сервисе</a></li><li class="support__item"><a class="support__link" href="2">Наша команда</a></li><li class="support__item"><a class="support__link" href="3">Вакансии</a></li><li class="support__item"><a class="support__link" href="4">Инвесторы</a></li></ul></nav></div></div><div class="subscription footer__item"><h3>Подписка</h3></div></div><footer class="footer-bottom"><span class="footer-bottom__copyright">Copyright © 2018 Toxin отель. Все права защищены.</span><ul class="links"><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/twitter.svg"/></a></li><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/facebook.svg"/></a></li><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/instagram.svg"/></a></li></ul></footer></div></body>
+  <body><div class="container"><div class="footer"><div class="info"><div class="info__logo"><img src="../assets/img/logo/logo.svg"/></div><div class="info__company-info"><span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды».</span></div></div><div class="navigation footer__item"><h3>Навигация</h3><div class="navigation__content content"><nav class="navigation__nav"><ul class="navigation__footer footer-ul"><li class="navigation__item"><a class="navigation__link" href="1">О нас</a></li><li class="navigation__item"><a class="navigation__link" href="2">Новости</a></li><li class="navigation__item"><a class="navigation__link" href="3">Служба поддержки</a></li><li class="navigation__item"><a class="navigation__link" href="4">Услуги</a></li></ul></nav></div></div><div class="about footer__item"><h3>О нас</h3><div class="about__content content"><nav class="about__nav"><ul class="about__footer footer-ul"><li class="about__item"><a class="about__link" href="1">О сервисе</a></li><li class="about__item"><a class="about__link" href="2">Наша команда</a></li><li class="about__item"><a class="about__link" href="3">Вакансии</a></li><li class="about__item"><a class="about__link" href="4">Инвесторы</a></li></ul></nav></div></div><div class="support footer__item"><h3>Служба поддержки</h3><div class="support__content content"><nav class="support__nav"><ul class="support__footer footer-ul"><li class="support__item"><a class="support__link" href="1">Соглашения</a></li><li class="support__item"><a class="support__link" href="2">Сообщества</a></li><li class="support__item"><a class="support__link" href="3">Связь с нами</a></li></ul></nav></div></div><div class="subscription footer__item"><h3>Подписка</h3><div class="content subscription__item"><span class="subscription__content">Получайте специальные предложения и новости сервиса</span><form class="subscription__form"><input class="subscription__input" placeholder="Email" type="email"/><img class="subscription__arrow" src="../assets/img/icons/arrow_forward.svg"/></form></div></div></div><footer class="footer-bottom"><div class="footer-bottom__copyright"><span class="footer-bottom__copyright__text">Copyright © 2018 Toxin отель. Все права защищены.</span></div><div class="footer-bottom__links"><ul class="links"><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/twitter.svg"/></a></li><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/facebook.svg"/></a></li><li class="links__item"><a class="links__twitter"><img class="links__img" src="../assets/img/social_media/instagram.svg"/></a></li></ul></div></footer></div></body>
 </html>
