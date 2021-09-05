@@ -6,7 +6,11 @@
             form.log-in__form
                 input(placeholder='Email' type='email').log-in__form__email
                 input(placeholder='Пароль' type='password').log-in__form__password
-                input(value='Войти' type='submit').log-in__form__submit
+                .log-in__unput-container
+                    input(value='Войти' type='submit').log-in__form__submit
+                    img(src='../assets/img/icons/arrow_forward-white.png').log-in__form__arrow
+
+
         .log-in__create-account
             span.hint Нет аккаунта на Toxin?
             button.create_account Создать
