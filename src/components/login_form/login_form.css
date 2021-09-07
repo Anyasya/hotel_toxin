@@ -1,0 +1,103 @@
+.container {
+  width: 380px;
+  height: 646px;
+  margin: auto;
+}
+
+.log-in__content {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 42px;
+  height: 323px;
+}
+
+.log-in__inputs {
+  margin-bottom: 10px;
+}
+
+.log-in__form {
+  display: flex;
+  height: 162px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.log-in__heading {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.log-in__form__email, .log-in__form__password {
+  height: 44px;
+  text-indent: 16px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 100%;
+  border-radius: 4px;
+}
+
+.log-in__form__email::placeholder, .log-in__form__password::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.log-in__form__submit {
+  width: 100%;
+  height: 44px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: white;
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.log-in__form__submit .log-in__form__submit::-ms-value {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.log-in__create-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.log-in__create-account .create_account {
+  width: 98px;
+  height: 40px;
+  position: relative;
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: #BC9CFF;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.log-in__create-account .create_account::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  z-index: -1;
+}
+
+.log-in__unput-container {
+  position: relative;
+}
+.log-in__unput-container .log-in__form__arrow {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+/*# sourceMappingURL=login_form.css.map */

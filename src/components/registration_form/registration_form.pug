@@ -1,0 +1,41 @@
+.container
+    .registration__content
+        .registration__heading
+            h2.registration__heading Регистрация аккаунта
+        .registration__fullname
+            form.registration__fullname-form
+                .registration__form-fullname
+                    input(placeholder='Имя' type='text').registration__form__name
+                    input(placeholder='Фамилия' type='text').registration__form__surname
+                .registration__form-sex
+                    .registration__form-sex-checkbox
+                        input#registration_sex_male(type='radio' name='name')
+                        label(for='registration_sex_male')
+                        span.registration_sex_name Мужчина
+                    .registration__form-sex-checkbox
+                        input#registration_sex_female(type='radio' name='name')
+                        label(for='registration_sex_female')
+                        span.registration_sex_name Женщина
+
+        .registration__dob
+            h3.heading__dob Дата рождения
+            form.registration____fullname-form
+                input(placeholder='ДД.ММ.ГГГГ' type='').registration__form__dob
+        .registration__account
+            h3.heading__dob Данные для входа в сервис
+            form.registration__acc-form
+                .registration__acc
+                    input(placeholder='Email' type='email').registration__email
+                    input(placeholder='Пароль' type='password').registration__password
+                .registration__email__toggle
+                    input(type='checkbox' id='send_email_checkbox').registration__send_emails
+                    label(for='send_email_checkbox')
+                    .registration__label
+                        span.registration__label-text Получать спецпредложения
+        .registration__paying
+            form.registration__paying-container
+                input(value='Перейти к оплате' type='submit').registration__form__submit
+                img(src='../assets/img/icons/arrow_forward-white.png').registration__form__arrow
+        .registration__log-in
+            span.hint Уже есть аккаунт на Toxin
+            button.registration__log-in-button Войти

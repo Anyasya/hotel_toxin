@@ -1,0 +1,208 @@
+.container
+  width: 380px
+  height: 646px
+  margin: auto
+
+.registration__content
+  width: 320px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin: auto
+  padding-top: 42px
+  height: 616px
+
+.registration__heading
+  font-family: "Montserrat-bold", sans-serif
+  font-weight: bold
+  font-size: 24px
+
+.registration__form__name, .registration__form__surname, .registration__form__dob, .registration__email, .registration__password
+  height: 44px
+  text-indent: 16px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  width: 100%
+  border-radius: 4px
+
+.registration__form__name::placeholder, .registration__form__surname::placeholder, .registration__form__dob::placeholder, .registration__email::placeholder, .registration__password::placeholder
+  color: rgba(31, 32, 65, 0.25)
+
+h3
+  text-transform: uppercase
+  font-family: "Montserrat-bold", sans-serif
+  font-weight: 700
+  font-size: 12px
+
+.registration__fullname
+  height: 176px
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+
+.registration__dob
+  height: 84px
+
+.registration__account
+  height: 168px
+
+.registration__paying
+  height: 74px
+
+.registration__log-in
+  height: 44px
+
+.registration__form-sex
+  margin-top: -7px
+
+input[type=radio]
+  visibility: hidden
+
+.registration__form-sex-checkbox
+  display: inline-block
+  position: relative
+  margin-right: 82px
+  width: 33px
+
+  label:after
+    content: ""
+    display: inline-block
+    position: relative
+    width: 20px
+    height: 20px
+    border-radius: 12px
+    border: 1px solid #BC9CFF
+    background-color: transparent
+    margin-top: 3px
+
+  input[type=radio]
+    visibility: hidden
+
+    &:checked + label
+      &:before
+        border-radius: 11px
+        width: 12px
+        height: 12px
+        position: absolute
+        top: 22px
+        left: 4px
+        content: " "
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+
+      &:after
+        opacity: 1
+
+.registration_sex_name
+  position: absolute
+  left: 30px
+  top: 20px
+
+.registration__email__toggle
+  display: inline-flex
+  width: 259px
+  justify-content: space-between
+
+  input[type=checkbox]
+    height: 0
+    width: 0
+    visibility: hidden
+
+    &:checked + label
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+      border: none
+
+      &::after
+        left: calc(100% - 4px)
+        transform: translateX(-100%)
+
+  label
+    cursor: pointer
+    width: 40px
+    height: 20px
+    background: white
+    display: block
+    border-radius: 24px
+    position: relative
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    margin-top: -2px
+
+    &::after
+      content: ""
+      position: absolute
+      top: 3px
+      left: 3px
+      width: 12px
+      height: 12px
+      background: rgba(31, 32, 65, 0.25)
+      border-radius: 16px
+      transition: 0.3s
+
+.registration__label
+  height: 24px
+
+.registration__paying-container
+  position: relative
+
+.registration__form__submit
+  color: white
+  width: 100%
+  height: 44px
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  border-radius: 22px
+  text-transform: uppercase
+  font-size: 12px
+  font-family: "Montserrat-bold", sans-serif
+  font-weight: bold
+  cursor: pointer
+
+.registration__form__arrow
+  position: absolute
+  right: 14px
+  top: 14px
+
+.registration__log-in
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.registration__log-in-button
+  width: 98px
+  height: 40px
+  position: relative
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+  border-radius: 22px
+  color: #BC9CFF
+  background-color: white
+  font-size: 12px
+  font-family: "Montserrat-bold", sans-serif
+  font-weight: bold
+  text-transform: uppercase
+
+  &::before
+    content: ""
+    position: absolute
+    top: -2px
+    bottom: -2px
+    left: -2px
+    right: -2px
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+    border-radius: 22px
+    z-index: -1
+
+.registration__form-fullname, .registration__acc
+  display: flex
+  height: 98px
+  flex-direction: column
+  justify-content: space-between
+
+.registration__form__dob, .registration__acc-form
+  margin-top: 5px
+
+
+.registration__send_emails
+  margin-left: -10px
+
+.hint
+  margin-top: -3px
+
+#registration_sex_male, #registration_sex_female
+  cursor: pointer
