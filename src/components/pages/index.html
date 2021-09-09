@@ -111,38 +111,45 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: 400;
-}.container {
+}.accommodation {
   width: 380px;
-  height: 646px;
-  margin: auto;
+  height: 374px;
+  margin: 0 auto;
 }
 
-.registration__content {
+.accommodation__content {
   width: 320px;
+  height: 302px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  margin: auto;
-  padding-top: 42px;
-  height: 616px;
+  margin-left: 30px;
+  margin-top: 42px;
 }
 
-.registration__heading {
+.accommodation__characters {
+  width: 100%;
+  height: 208px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-between;
+  margin-top: 11px;
+}
+
+.accommodation__form-guests {
+  margin-bottom: 20px;
+}
+
+h2 {
   font-family: "Montserrat-bold", sans-serif;
   font-weight: bold;
   font-size: 24px;
-}
-
-.registration__form__name, .registration__form__surname, .registration__form__dob, .registration__email, .registration__password {
-  height: 44px;
-  text-indent: 16px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  width: 100%;
-  border-radius: 4px;
-}
-
-.registration__form__name::placeholder, .registration__form__surname::placeholder, .registration__form__dob::placeholder, .registration__email::placeholder, .registration__password::placeholder {
-  color: rgba(31, 32, 65, 0.25);
+  line-height: 28px;
 }
 
 h3 {
@@ -150,129 +157,37 @@ h3 {
   font-family: "Montserrat-bold", sans-serif;
   font-weight: 700;
   font-size: 12px;
+  display: inline-block;
+  margin-bottom: 6px;
 }
 
-.registration__fullname {
-  height: 176px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.title-guests {
+  margin-bottom: 6px;
 }
 
-.registration__dob {
-  height: 84px;
-}
-
-.registration__account {
-  height: 168px;
-}
-
-.registration__paying {
-  height: 74px;
-}
-
-.registration__log-in {
+[class^=accommodation__input-] {
+  display: inline-block;
   height: 44px;
-}
-
-.registration__form-sex {
-  margin-top: -7px;
-}
-
-input[type=radio] {
-  visibility: hidden;
-}
-
-.registration__form-sex-checkbox {
-  display: inline-block;
-  position: relative;
-  margin-right: 82px;
-  width: 33px;
-}
-.registration__form-sex-checkbox label:after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 12px;
-  border: 1px solid #BC9CFF;
-  background-color: transparent;
-  margin-top: 3px;
-}
-.registration__form-sex-checkbox input[type=radio] {
-  visibility: hidden;
-}
-.registration__form-sex-checkbox input[type=radio]:checked + label:before {
-  border-radius: 11px;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 22px;
-  left: 4px;
-  content: " ";
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
-.registration__form-sex-checkbox input[type=radio]:checked + label:after {
-  opacity: 1;
-}
-
-.registration_sex_name {
-  position: absolute;
-  left: 30px;
-  top: 20px;
-}
-
-.registration__email__toggle {
-  display: inline-flex;
-  width: 259px;
-  justify-content: space-between;
-}
-.registration__email__toggle input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-.registration__email__toggle input[type=checkbox]:checked + label {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border: none;
-}
-.registration__email__toggle input[type=checkbox]:checked + label::after {
-  left: calc(100% - 4px);
-  transform: translateX(-100%);
-}
-.registration__email__toggle label {
-  cursor: pointer;
-  width: 40px;
-  height: 20px;
-  background: white;
-  display: block;
-  border-radius: 24px;
-  position: relative;
+  text-indent: 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  margin-top: -2px;
-}
-.registration__email__toggle label::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 12px;
-  height: 12px;
-  background: rgba(31, 32, 65, 0.25);
-  border-radius: 16px;
-  transition: 0.3s;
+  width: 150px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.registration__label {
-  height: 24px;
+.accommodation__guests {
+  width: 100%;
 }
 
-.registration__paying-container {
+.accommodation__input-guests {
+  width: 100%;
+}
+
+.accommodation__pick-up {
+  width: 100%;
   position: relative;
 }
-
-.registration__form__submit {
+.accommodation__pick-up .accommodation__form-pick-up-submit {
   color: white;
   width: 100%;
   height: 44px;
@@ -284,124 +199,28 @@ input[type=radio] {
   font-weight: bold;
   cursor: pointer;
 }
-
-.registration__form__arrow {
+.accommodation__pick-up .accommodation__form-pick-up-arrow {
   position: absolute;
   right: 14px;
   top: 14px;
 }
 
-.registration__log-in {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.registration__log-in-button {
-  width: 98px;
-  height: 40px;
+.accommodation__form-guests, .accommodation__form-arrival, .accommodation__form-departure {
   position: relative;
-  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  color: #BC9CFF;
-  background-color: white;
-  font-size: 12px;
-  font-family: "Montserrat-bold", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
 }
-.registration__log-in-button::before {
-  content: "";
+
+.accommodation__input-expand {
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  z-index: -1;
+  right: 16px;
+  top: 19px;
+  width: 12px;
+  height: 8px;
+  border: none;
 }
 
-.registration__form-fullname, .registration__acc {
-  display: flex;
-  height: 98px;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.registration__form__dob, .registration__acc-form {
-  margin-top: 5px;
-}
-
-.registration__send_emails {
-  margin-left: -10px;
-}
-
-.hint {
-  margin-top: -3px;
-}
-
-#registration_sex_male, #registration_sex_female {
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=registration_form.css.map */
+/*# sourceMappingURL=accomodation.css.map */
 
     </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="registration__content">
-        <div class="registration__heading">
-          <h2 class="registration__heading">Регистрация аккаунта</h2>
-        </div>
-        <div class="registration__fullname">
-          <form class="registration__fullname-form">
-            <div class="registration__form-fullname">
-              <input class="registration__form__name" placeholder="Имя" type="text">
-              <input class="registration__form__surname" placeholder="Фамилия" type="text">
-            </div>
-            <div class="registration__form-sex">
-              <div class="registration__form-sex-checkbox">
-                <input id="registration_sex_male" type="radio" name="name">
-                <label for="registration_sex_male"></label><span class="registration_sex_name">Мужчина</span>
-              </div>
-              <div class="registration__form-sex-checkbox">
-                <input id="registration_sex_female" type="radio" name="name">
-                <label for="registration_sex_female"></label><span class="registration_sex_name">Женщина</span>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="registration__dob">
-          <h3 class="heading__dob">Дата рождения</h3>
-          <form class="registration____fullname-form">
-            <input class="registration__form__dob" placeholder="ДД.ММ.ГГГГ" type="">
-          </form>
-        </div>
-        <div class="registration__account">
-          <h3 class="heading__dob">Данные для входа в сервис</h3>
-          <form class="registration__acc-form">
-            <div class="registration__acc">
-              <input class="registration__email" placeholder="Email" type="email">
-              <input class="registration__password" placeholder="Пароль" type="password">
-            </div>
-            <div class="registration__email__toggle">
-              <input class="registration__send_emails" type="checkbox" id="send_email_checkbox">
-              <label for="send_email_checkbox"></label>
-              <div class="registration__label"><span class="registration__label-text">Получать спецпредложения</span></div>
-            </div>
-          </form>
-        </div>
-        <div class="registration__paying">
-          <form class="registration__paying-container">
-            <input class="registration__form__submit" value="Перейти к оплате" type="submit"><img class="registration__form__arrow" src="../assets/img/icons/arrow_forward-white.png">
-          </form>
-        </div>
-        <div class="registration__log-in"><span class="hint">Уже есть аккаунт на Toxin</span>
-          <button class="registration__log-in-button">Войти</button>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body><div class="container"><div class="accommodation"><div class="accommodation__content"><div class="accommodation__heading"><h2 class="accommodation__header-h2">Найдём номера под ваши пожелания</h2></div><div class="accommodation__characters"><div class="accommodation__arrival"><h3 class="accommodation__title">Прибытие</h3><form class="accommodation__form-arrival"><input class="accommodation__input-arrival" type="text" placeholder="ДД.ММ.ГГГГ"/><img class="accommodation__input-expand" src="../assets/img/icons/expand_more.png"/></form></div><div class="accommodation__departure"><h3 class="accommodation__title">Выезд</h3><form class="accommodation__form-departure"><input class="accommodation__input-departure" type="text" placeholder="ДД.ММ.ГГГГ"/><img class="accommodation__input-expand" src="../assets/img/icons/expand_more.png"/></form></div><div class="accommodation__guests"><h3 class="accommodation__title title-guests">Гости</h3><form class="accommodation__form-guests"><input class="accommodation__input-guests" type="text" placeholder="Сколько гостей"/><img class="accommodation__input-expand" src="../assets/img/icons/expand_more.png"/></form></div></div><div class="accommodation__pick-up"><form class="accommodation__form-pick-up"><input class="accommodation__form-pick-up-submit" value="Подобрать номер" type="submit"/><img class="accommodation__form-pick-up-arrow" src="../assets/img/icons/arrow_forward-white.png"/></form></div></div></div></div></body>
 </html>

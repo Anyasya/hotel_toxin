@@ -1,0 +1,26 @@
+.container
+    .accommodation
+        .accommodation__content
+            .accommodation__heading
+                h2.accommodation__header-h2 Найдём номера под ваши пожелания
+            .accommodation__characters
+                .accommodation__arrival
+                    h3.accommodation__title Прибытие
+                    form.accommodation__form-arrival
+                        input(type='text' placeholder='ДД.ММ.ГГГГ').accommodation__input-arrival
+                        img(src='../assets/img/icons/expand_more.png').accommodation__input-expand
+
+                .accommodation__departure
+                    h3.accommodation__title Выезд
+                    form.accommodation__form-departure
+                        input(type='text' placeholder='ДД.ММ.ГГГГ').accommodation__input-departure
+                        img(src='../assets/img/icons/expand_more.png').accommodation__input-expand
+                .accommodation__guests
+                    h3.accommodation__title.title-guests Гости
+                    form.accommodation__form-guests
+                        input(type='text' placeholder='Сколько гостей').accommodation__input-guests
+                        img(src='../assets/img/icons/expand_more.png').accommodation__input-expand
+            .accommodation__pick-up
+                form.accommodation__form-pick-up
+                    input(value='Подобрать номер' type='submit').accommodation__form-pick-up-submit
+                    img(src='../assets/img/icons/arrow_forward-white.png').accommodation__form-pick-up-arrow
